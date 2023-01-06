@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%;
+}
+
+h1, h2 {
+  color: hsl(210deg, 10%, 33%);
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2em;
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  gap: 1em;
+}
+
+body {
+  background-image: url("/images/bg-header-desktop.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: 45%;
+}
+header .description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2em;
+}
+header .links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  gap: 1.5em;
+}
+header .links a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 1em 1.7em;
+  border-radius: 5em;
+  border-bottom: 0.3em inset rgba(46, 46, 46, 0.3);
+}
+header .links #btn1 {
+  background-color: hsl(171deg, 66%, 44%);
+}
+header .links #btn2 {
+  background-color: hsl(233deg, 100%, 69%);
+}
+
+section .second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .second-section .description {
+  width: 45%;
+  line-height: 1.5em;
+}
+section .second-section .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10em;
+}
+section .second-section .content .left {
+  width: 100%;
+  margin-left: -3em;
+}
+section .second-section .content .right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5em 0;
+}
+section .second-section .content .right ul {
+  width: 55%;
+  list-style: none;
+  font-size: 1.5rem;
+}
+section .second-section .content .right ul li {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+section .third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+section .third-section .description {
+  width: 75%;
+}
+section .fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+section .fourth-section .services {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+section .fourth-section .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 30%;
+  padding: 3em;
+}
+section .fourth-section .services .service img {
+  height: 5em;
+  margin-bottom: 3em;
+}
+section .fourth-section .companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10em;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("/images/bg-header-mobile.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    padding: 9em 1em;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2em 0;
+  }
+  header .first-section {
+    width: unset;
+  }
+  header .title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2em 0;
+  }
+  header .description {
+    line-height: 2.5rem;
+  }
+  header .links {
+    width: unset;
+    flex-direction: column;
+  }
+  header .links a {
+    padding: 1em 5em;
+  }
+  section {
+    text-align: center;
+  }
+  section .second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .second-section .description {
+    width: unset;
+  }
+  section .second-section .content {
+    flex-direction: column;
+    gap: unset;
+  }
+  section .second-section .content .left {
+    width: unset;
+    margin-left: unset;
+  }
+  section .second-section .content .left img {
+    width: 30em;
+  }
+  section .second-section .content .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  section .second-section .content .right ul {
+    width: 100%;
+  }
+  section .third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  section .third-section .description {
+    width: unset;
+  }
+  section .third-section .content img {
+    width: 30em;
+  }
+  section .fourth-section .services {
+    flex-direction: column;
+  }
+  section .fourth-section .services .service {
+    width: unset;
+  }
+  section .fourth-section .services .service img {
+    height: 5em;
+    margin-bottom: 1em;
+  }
+  section .fourth-section .companies {
+    flex-direction: column;
+    margin: unset;
+    padding: unset;
+  }
+  section .fourth-section .companies img {
+    margin: 3em auto;
+  }
+}/*# sourceMappingURL=style.css.map */
